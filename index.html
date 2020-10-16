@@ -1,0 +1,39 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Calculadora</title>
+    <link rel="stylesheet" href="cal.js">
+</head>
+  <body>
+    <div class="calc">
+        <div class="calc__line">
+        <imput id="resultado" class="calc__resultado">0</imput>
+        <div class="calc__line">
+        <button id="btn" onclick="handleClick(this)" class="calc__button btn" value="7">7</button>
+        <button id="btn" onclick="handleClick(this)" class="calc__button btn" value="8">8</button>
+        <button id="btn" onclick="handleClick(this)" class="calc__button btn" value="9">9</button>
+        <button id="btn" onclick="handleClick(this)" class="calc__button--ope btn" value="+">+</button>
+        <div class="calc__line">
+        <button id="btn" onclick="handleClick(this)" class="calc__button btn" value="4">4</button>
+        <button id="btn" onclick="handleClick(this)" class="calc__button btn" value="5">5</button>
+        <button id="btn" onclick="handleClick(this)" class="calc__button btn" value="6">6</button>
+        <button id="btn" onclick="handleClick(this)" class="calc__button--ope btn" value="-">-</button>
+        </div>
+        <div class="calc__line">
+        <button id="btn" onclick="handleClick(this)" class="calc__button btn" value="1">1</button>
+        <button id="btn" onclick="handleClick(this)" class="calc__button btn" value="2">2</button>
+        <button id="btn" onclick="handleClick(this)" class="calc__button btn" value="3">3</button>
+        <button id="btn" onclick="handleClick(this)" class="calc__button--ope btn" value="*">*</button>
+        </div>
+        <div class="calc__line">
+        <button id="btn" onclick="handleClick(this)" class="calc__button--zero btn" value="0">0</button>
+        <button id="btn" onclick="handleClick(this)" class="calc__button--resultado btn" value="=">Enter</button>
+        <button id="btn" onclick="handleClick(this)" class="calc__button--ope btn" value="/">/</button>
+        </div>
+        <button class="calc__button--backspace" onclick="handleClick(this)" value="clear">&larr;</button>
+        <div class="calc__line">
+        </div>
+        <script src="cal.js"></script>
+  </body>
+</html>
